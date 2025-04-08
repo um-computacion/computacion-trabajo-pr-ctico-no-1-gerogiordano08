@@ -1,32 +1,32 @@
 import unittest
-#from src.roman_converter.py import roman_to_decimal
+from src.roman_converter import decimal_to_roman
 class TestRomanConverter(unittest.TestCase):
-    
+
     def test_conversion_simple(self):
-        self.assertEqual(roman_to_decimal('I'), 1)
-        self.assertEqual(roman_to_decimal('V'), 5)
-        self.assertEqual(roman_to_decimal('X'), 10)
-        self.assertEqual(roman_to_decimal('L'), 50)
-        self.assertEqual(roman_to_decimal('C'), 100)
-        self.assertEqual(roman_to_decimal('D'), 500)
-        self.assertEqual(roman_to_decimal('M'), 1000)
+        self.assertEqual(decimal_to_roman(1), 'I')
+        self.assertEqual(decimal_to_roman(5), 'V')
+        self.assertEqual(decimal_to_roman(10), 'X')
+        self.assertEqual(decimal_to_roman(50), 'L')
+        self.assertEqual(decimal_to_roman(100), 'C')
+        self.assertEqual(decimal_to_roman(500), 'D')
+        self.assertEqual(decimal_to_roman(1000), 'M')
 
     def test_substraction(self):
-        self.assertEqual(roman_to_decimal('IV'), 4)
-        self.assertEqual(roman_to_decimal('IX'), 9)
-        self.assertEqual(roman_to_decimal('XL'), 40)
-        self.assertEqual(roman_to_decimal('XC'), 90)
-        self.assertEqual(roman_to_decimal('CD'), 400)
-        self.assertEqual(roman_to_decimal('CM'), 900)
+        self.assertEqual(decimal_to_roman(4), 'IV')
+        self.assertEqual(decimal_to_roman(9), 'IX')
+        self.assertEqual(decimal_to_roman(40), 'XL')
+        self.assertEqual(decimal_to_roman(90), 'XC')
+        self.assertEqual(decimal_to_roman(400), 'CD')
+        self.assertEqual(decimal_to_roman(900), 'CM')
 
     def test_range(self):
-        self.assertEqual(roman_to_decimal('MMMCMXCIX'), 3999)
+        self.assertEqual(decimal_to_roman(3999), 'MMMCMXCIX')
 
     def test_complex_numbers(self):
-        self.assertEqual(roman_to_decimal('MCMXCIX'), 1999)
-        self.assertEqual(roman_to_decimal('MMCCCXLV'), 2345)
-        self.assertEqual(roman_to_decimal('MMMMDXX'), 3520)
-        self.assertEqual(roman_to_decimal('DCCCLXXXVIII'), 888)
+        self.assertEqual(decimal_to_roman(1999), 'MCMXCIX')
+        self.assertEqual(decimal_to_roman(2345), 'MMCCCXLV')
+        self.assertEqual(decimal_to_roman(3520), 'MMMDXX')
+        self.assertEqual(decimal_to_roman(888), 'DCCCLXXXVIII')
              
 if __name__ == '__main__':
     unittest.main()

@@ -1,38 +1,50 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/IjdyOxY5)
+
 # Trabajo Práctico 1: Desarrollo Guiado por Pruebas (TDD) - Conversión de Números Romanos
 
 ## Identificación del Alumno
-**Nombre y Apellido:** [Completar con tu nombre y apellido]
+
+**Nombre y Apellido:** Gerónimo Giordano
 
 ## Objetivo
+
 Este trabajo práctico tiene como objetivo practicar el desarrollo guiado por pruebas (TDD) en Python, implementando un convertidor de números decimales a números romanos.
 
 ## Fecha de Vencimiento
+
 El trabajo debe ser entregado antes del **09/04/2025 a las 13:00 hs**.
 
 ## Enfoque
+
 El trabajo se realizará en dos fases, siguiendo las prácticas de TDD:
 
 ### Fase 1: Implementación de Pruebas
+
 En esta primera fase, deberás:
+
 1. Crear los archivos de prueba necesarios
 2. Implementar los casos de prueba para la conversión de números decimales a romanos
 3. Asegurarte de que las pruebas fallen inicialmente (rojo)
 4. Hacer commit y push de solo los archivos de prueba
 
 ### Fase 2: Implementación de la Solución
+
 En la segunda fase, deberás:
+
 1. Implementar las funciones necesarias para pasar las pruebas
 2. Refactorizar el código si es necesario
 3. Asegurarte de que todas las pruebas pasen (verde)
 4. Hacer commit y push de la implementación
 
 ## Requisitos
+
 - Python 3.x
 - unittest (incluido en la biblioteca estándar de Python)
 
 ## Reglas de Conversión
+
 Para la conversión de números decimales a romanos, deberás seguir estas reglas:
+
 - Los números romanos se escriben usando las siguientes letras: I, V, X, L, C, D, M
 - Los valores de las letras son:
   - I = 1
@@ -50,6 +62,7 @@ Para la conversión de números decimales a romanos, deberás seguir estas regla
 - El rango de números a convertir será de 1 a 3999
 
 ## Estructura del Proyecto
+
 ```
 .
 ├── tests/
@@ -59,10 +72,12 @@ Para la conversión de números decimales a romanos, deberás seguir estas regla
 ```
 
 ## Entregables
+
 1. Primer push: Archivos de prueba (`tests/test_roman_converter.py`)
 2. Segundo push: Implementación completa (`src/roman_converter.py`)
 
 ## Criterios de Evaluación
+
 - Correcta implementación de las pruebas siguiendo TDD
 - Cobertura adecuada de casos de prueba
 - Implementación correcta de la lógica de conversión
@@ -70,6 +85,7 @@ Para la conversión de números decimales a romanos, deberás seguir estas regla
 - Cumplimiento de las reglas de conversión
 
 ## Ejemplos de Uso
+
 ```python
 import unittest
 from src.roman_converter import decimal_to_roman
@@ -98,13 +114,16 @@ if __name__ == '__main__':
 ```
 
 ## Uso del Repositorio
+
 Para trabajar con este repositorio, es importante seguir estas pautas:
 
 1. **No usar la opción "Add Files Via Upload"**
+
    - Todos los cambios deben realizarse a través de comandos git
    - Esto asegura un mejor control de versiones y seguimiento de cambios
 
 2. **Proceso de trabajo recomendado**:
+
    ```bash
    # Clonar el repositorio
    git clone <url-del-repositorio>
@@ -118,6 +137,7 @@ Para trabajar con este repositorio, es importante seguir estas pautas:
    ```
 
 3. **Commits**:
+
    - Primer commit: Implementación de pruebas
    - Segundo commit: Implementación de la solución
    - Cada commit debe tener un mensaje descriptivo y claro
